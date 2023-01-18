@@ -1,9 +1,6 @@
-import cmath
-
-# xử lý dữ liệu nhập vào
 a, b, c = float(input('a = ') or 0), float(input('b = ') or 0), float(input('c = ') or 0)
 delta = b**2 - 4*a*c
-sqrtdelta = cmath.sqrt(delta)
+sqrtdelta = (abs(delta))**(1/2)
 
 if (a == 0):
     kq = 'Nghiem duy nhat'
@@ -21,7 +18,11 @@ else:
     else:
         kq = 'Nghiem phuc'
         R = -b/(2*a)
-        i = sqrtdelta.imag
+        i = sqrtdelta/(2*a)
         x1 = complex(R, i)
         x2 = complex(R, -i)
 
+if (kq != '' and x1 and x2):
+    print(kq)
+    print('x1 = ', x1)
+    print('x2 = ', x2)
