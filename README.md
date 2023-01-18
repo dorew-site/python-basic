@@ -1,2 +1,2 @@
 # python-basic
-Một tập lệnh PHP cho phép thực thi một vài lệnh Python cơ bản
+> Một tập lệnh PHP sử dụng hàm `shell_exec()` để thực thi một số lệnh Python cơ bản
